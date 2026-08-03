@@ -48,7 +48,7 @@ description: O que a skill faz (primeira frase = gatilho)
 ## 🤝 Comunidade
 
 - **Grupo WhatsApp**: (adicionar link quando disponível)
-- **Hermes Atlas**: [hermesatlas.com](https://hermesatlas.com) — mapa do ecossistema
+- **Hermes Bible**: [www.hermesbible.com](https://www.hermesbible.com/) — guia e recursos da comunidade
 - **Docs oficial**: [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com)
 
 ## 📜 Licença
