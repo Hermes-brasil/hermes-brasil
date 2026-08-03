@@ -50,7 +50,11 @@ description: O que a skill faz (primeira frase = gatilho)
 
 ## 🤝 Comunidade
 
-- **Grupo WhatsApp**: (adicionar link quando disponível)
+Junte-se aos canais oficiais da comunidade brasileira de Hermes Agent:
+
+- **Grupo WhatsApp**: [Entre no grupo](https://chat.whatsapp.com/DIDJlL9yQdlBY0fa4pABbe?s=cl&p=a&ilr=1)
+- **Telegram**: [t.me/hermesagentbr](https://t.me/hermesagentbr)
+- **Discord**: [Entre no Discord](https://discord.gg/nkZQeVjcJ)
 - **Hermes Bible**: [www.hermesbible.com](https://www.hermesbible.com/) — guia e recursos da comunidade
 - **Docs oficial**: [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com)
 
