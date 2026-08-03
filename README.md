@@ -19,7 +19,10 @@ Este repositório reúne skills, guias, integrações e recursos em **português
 ```
 hermes-brasil/
 ├── skills/          → Skills em português (formato SKILL.md)
+│   ├── rag-assistente-conhecimento/    → Assistente RAG com conhecimento da empresa
+│   └── prospeccao-b2b-comercio-local/  → Prospecção B2B de comércio local
 ├── guides/          → Guias de instalação, configuração e uso (pt-BR)
+│   └── instalacao-basica.md
 ├── integrations/    → Integrações (WhatsApp, n8n, etc.)
 ├── community/       → Recursos da comunidade brasileira
 ├── README.md        → Este arquivo
