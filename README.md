@@ -30,7 +30,8 @@ hermes-brasil/
 │   ├── instalacao-producao-vps.md          → VPS 24/7, gateway, update
 │   ├── cron-em-producao.md                 → Jobs sérios (ledger, delivery, HOME)
 │   ├── profiles-e-kanban.md                → Multi-agente com profiles
-│   └── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
+│   ├── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
+│   └── primeiro-agente.md                  → Criando seu primeiro agente (passo a passo)
 ├── integrations/    → Integrações (WhatsApp, n8n, etc.) — contribuições bem-vindas
 ├── community/       → Recursos da comunidade brasileira — contribuições bem-vindas
 ├── README.md
