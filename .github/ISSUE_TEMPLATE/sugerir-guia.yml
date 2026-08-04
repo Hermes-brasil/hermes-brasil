@@ -1,0 +1,32 @@
+name: Sugerir guia
+description: Compartilhe um guia em português para a comunidade
+title: "[Guia] "
+labels: ["guia"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir com um guia para a comunidade Hermes Brasil! 🇧🇷
+  - type: input
+    id: guide_name
+    attributes:
+      label: Título do guia
+      description: "Ex: Como configurar o WhatsApp no Hermes"
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Conteúdo do guia (ou link)
+      description: "Cole o conteúdo ou o link para o arquivo"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Guia em português
+        - label: Passo a passo claro
+        - label: Sem dados sensíveis/credenciais
+        - label: Testei as instruções

@@ -1,0 +1,39 @@
+name: Sugerir skill
+description: Compartilhe uma skill em português para a comunidade
+title: "[Skill] "
+labels: ["skill"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir com a comunidade Hermes Brasil! 🇧🇷
+  - type: input
+    id: skill_name
+    attributes:
+      label: Nome da skill
+      description: "Ex: busca-leads-regiao"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: O que a skill faz?
+      description: Descreva o que ela resolve e quando usar
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Conteúdo da skill (ou link)
+      description: "Cole o SKILL.md ou o link para o arquivo"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Segui o formato agentskills.io (SKILL.md)
+        - label: Conteúdo em português
+        - label: Sem dados sensíveis/credenciais
+        - label: Testei a skill antes de enviar

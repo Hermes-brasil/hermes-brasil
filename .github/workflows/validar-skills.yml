@@ -1,0 +1,49 @@
+name: Validar skills
+
+on:
+  pull_request:
+    paths:
+      - 'skills/**'
+  push:
+    paths:
+      - 'skills/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validar formato SKILL.md
+        shell: bash
+        run: |
+          echo "=== Validando skills (formato agentskills.io) ==="
+          errors=0
+          for skill in $(find skills -name 'SKILL.md' 2>/dev/null); do
+            dir=$(dirname "$skill")
+            name=$(basename "$dir")
+            echo "▶ Verificando: $name"
+            # Verificar frontmatter
+            if ! head -1 "$skill" | grep -q '^---$'; then
+              echo "  ❌ $name: frontmatter (---) ausente no início"
+              errors=$((errors+1))
+            fi
+            if ! grep -q '^name:' "$skill"; then
+              echo "  ❌ $name: campo 'name' ausente"
+              errors=$((errors+1))
+            fi
+            if ! grep -q '^description:' "$skill"; then
+              echo "  ❌ $name: campo 'description' ausente"
+              errors=$((errors+1))
+            fi
+            # Verificar se description <= 60 chars (gatilho)
+            desc=$(grep '^description:' "$skill" | head -1 | cut -d: -f2- | tr -d '"' | wc -c)
+            if [ "$desc" -gt 65 ]; then
+              echo "  ⚠️ $name: description longa ($desc chars) — recomenda-se < 60"
+            fi
+          done
+          if [ "$errors" -gt 0 ]; then
+            echo "❌ $errors erro(s) encontrado(s) nas skills"
+            exit 1
+          fi
+          echo "✅ Todas as skills válidas!"

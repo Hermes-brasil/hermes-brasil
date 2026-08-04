@@ -1,0 +1,34 @@
+name: Reportar problema
+description: Reporte um problema no repositório ou nas skills
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar! Descreva o problema com detalhes. 🇧🇷
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: O que aconteceu?
+      description: "Descreva o problema"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que era esperado?
+      description: "O que deveria acontecer"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Passos para reproduzir
+      description: "Como reproduzir o problema"
+      placeholder: "1. Faça isso... 2. Depois aquilo..."
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente
+      description: "Ex: Hermes v0.20.0, Linux, etc."
