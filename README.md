@@ -24,7 +24,8 @@ hermes-brasil/
 │   ├── hermes-philosophy-podcast/      → Filosofia do Hermes (podcast Nous Research)
 │   └── orquestracao-kanban-humano-agente/ → Kanban com humanos + agentes de IA
 ├── guides/          → Guias de instalação, configuração e uso (pt-BR)
-│   └── instalacao-basica.md
+│   ├── instalacao-basica.md
+│   └── chrome-windows-cdp-wsl.md → Chrome autenticado do Windows no Hermes/WSL via CDP
 ├── integrations/    → Integrações (WhatsApp, n8n, etc.)
 ├── community/       → Recursos da comunidade brasileira
 ├── README.md        → Este arquivo
