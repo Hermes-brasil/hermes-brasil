@@ -19,23 +19,49 @@ Este repositório reúne skills, guias, integrações e recursos em **português
 ```
 hermes-brasil/
 ├── skills/          → Skills em português (formato SKILL.md)
-│   ├── rag-assistente-conhecimento/    → Assistente RAG com conhecimento da empresa
-│   ├── prospeccao-b2b-comercio-local/  → Prospecção B2B de comércio local
-│   ├── hermes-philosophy-podcast/      → Filosofia do Hermes (podcast Nous Research)
-│   └── orquestracao-kanban-humano-agente/ → Kanban com humanos + agentes de IA
+│   ├── anti-ai-slop/                       → Revisão editorial anti-slop (PT-BR + EN)
+│   ├── hermes-ops-producao/                → Ops de produção (update, gateway, health)
+│   ├── hermes-philosophy-podcast/          → Filosofia do Hermes (podcast Nous Research)
+│   ├── orquestracao-kanban-humano-agente/  → Kanban humanos + agentes (com pitfalls)
+│   ├── prospeccao-b2b-comercio-local/      → Prospecção B2B de comércio local
+│   └── rag-assistente-conhecimento/        → Assistente RAG com conhecimento da empresa
 ├── guides/          → Guias de instalação, configuração e uso (pt-BR)
-│   └── instalacao-basica.md
-├── integrations/    → Integrações (WhatsApp, n8n, etc.)
-├── community/       → Recursos da comunidade brasileira
-├── README.md        → Este arquivo
+│   ├── instalacao-basica.md                → Atalho mínimo
+│   ├── instalacao-producao-vps.md          → VPS 24/7, gateway, update
+│   ├── cron-em-producao.md                 → Jobs sérios (ledger, delivery, HOME)
+│   └── profiles-e-kanban.md                → Multi-agente com profiles
+├── integrations/    → Integrações (WhatsApp, n8n, etc.) — contribuições bem-vindas
+├── community/       → Recursos da comunidade brasileira — contribuições bem-vindas
+├── README.md
 └── LICENSE          → MIT
 ```
+
+## 🚀 Como usar as skills
+
+Com o Hermes instalado:
+
+```bash
+# Adicionar este repo como tap de skills
+hermes skills tap add Hermes-brasil/hermes-brasil
+
+# Ou instalar uma skill apontando o SKILL.md raw
+hermes skills install https://raw.githubusercontent.com/Hermes-brasil/hermes-brasil/main/skills/anti-ai-slop/SKILL.md
+```
+
+Também funciona clonar o repo e copiar pastas de `skills/` para `~/.hermes/skills/`.
+
+## 📖 Guias recomendados (ordem)
+
+1. [Instalação básica](./guides/instalacao-basica.md)
+2. [Produção em VPS](./guides/instalacao-producao-vps.md)
+3. [Cron em produção](./guides/cron-em-producao.md)
+4. [Profiles + Kanban](./guides/profiles-e-kanban.md)
 
 ## 🚀 Como contribuir
 
 1. Faça um **fork** deste repositório
 2. Crie uma branch para sua contribuição
-3. Adicione sua skill/guia/integração (veja os modelos abaixo)
+3. Adicione sua skill/guia/integração (veja [CONTRIBUTING.md](./CONTRIBUTING.md))
 4. Abra um **Pull Request**
 
 ### Padrão de skill (SKILL.md)
@@ -49,6 +75,8 @@ description: O que a skill faz (primeira frase = gatilho)
 ---
 # Conteúdo da skill em português
 ```
+
+**Critérios:** conteúdo técnico real, testado, sem segredos/credenciais, em português (ou bilíngue).
 
 ## 🤝 Comunidade
 
