@@ -20,7 +20,9 @@ Este repositório reúne skills, guias, integrações e recursos em **português
 hermes-brasil/
 ├── skills/          → Skills em português (formato SKILL.md)
 │   ├── rag-assistente-conhecimento/    → Assistente RAG com conhecimento da empresa
-│   └── prospeccao-b2b-comercio-local/  → Prospecção B2B de comércio local
+│   ├── prospeccao-b2b-comercio-local/  → Prospecção B2B de comércio local
+│   ├── hermes-philosophy-podcast/      → Filosofia do Hermes (podcast Nous Research)
+│   └── orquestracao-kanban-humano-agente/ → Kanban com humanos + agentes de IA
 ├── guides/          → Guias de instalação, configuração e uso (pt-BR)
 │   └── instalacao-basica.md
 ├── integrations/    → Integrações (WhatsApp, n8n, etc.)
