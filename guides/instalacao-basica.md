@@ -1,44 +1,55 @@
-# Guia básico: instalando o Hermes Agent
+# Guia de Exemplo: Instalando o Hermes Agent
 
-Para um caminho **de produção em VPS** (gateway 24/7, update, health-check), use:
+Guia de exemplo em português para a comunidade. Este guia mostra o padrão de documentação para a pasta `guides/`.
 
-→ **[instalacao-producao-vps.md](./instalacao-producao-vps.md)**
+## Pré-requisitos
 
-Este arquivo é o atalho mínimo.
+- Python 3.10+
+- Um VPS ou máquina com acesso ao terminal
 
 ## Instalação
 
 ```bash
-curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
-hash -r
-hermes version
-hermes doctor
+# Instalar via pipx (recomendado)
+pipx install hermes-agent
+
+# Ou clonar e instalar
+git clone https://github.com/NousResearch/hermes-agent.git
+cd hermes-agent
+pip install -e .
 ```
 
-## Primeiros comandos
+## Primeira execução
 
 ```bash
-hermes setup          # wizard
-hermes model          # escolhe modelo/provedor
-hermes                # chat interativo
-hermes chat -q "ping" # one-shot
+# Verificar instalação
+hermes --version
+
+# Iniciar o agente
+hermes
 ```
 
-## Gateway (Telegram etc.)
+## Configuração de modelo
+
+Configure o provedor de modelo (ex: DeepSeek, OpenAI, Anthropic):
+
+```bash
+hermes config set model.provider deepseek
+hermes config set model.name deepseek-chat
+```
+
+## Configurar Telegram
 
 ```bash
 hermes gateway setup
-hermes gateway install
-hermes gateway start
-hermes gateway status
+# Siga as instruções para conectar o Telegram
 ```
 
 ## Recursos
 
-- Produção VPS: [instalacao-producao-vps.md](./instalacao-producao-vps.md)
-- Cron: [cron-em-producao.md](./cron-em-producao.md)
-- Profiles + Kanban: [profiles-e-kanban.md](./profiles-e-kanban.md)
-- Docs oficiais: https://hermes-agent.nousresearch.com/docs/
-- Repo: https://github.com/NousResearch/hermes-agent
+- [Docs oficial](https://hermes-agent.nousresearch.com)
+- [Repositório](https://github.com/NousResearch/hermes-agent)
 
-Dúvidas: issues neste repositório ou canais da comunidade Hermes Brasil (README).
+## Dúvidas
+
+Abra uma issue ou fale no grupo da comunidade Hermes Brasil.

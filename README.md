@@ -29,7 +29,8 @@ hermes-brasil/
 │   ├── instalacao-basica.md                → Atalho mínimo
 │   ├── instalacao-producao-vps.md          → VPS 24/7, gateway, update
 │   ├── cron-em-producao.md                 → Jobs sérios (ledger, delivery, HOME)
-│   └── profiles-e-kanban.md                → Multi-agente com profiles
+│   ├── profiles-e-kanban.md                → Multi-agente com profiles
+│   └── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
 ├── integrations/    → Integrações (WhatsApp, n8n, etc.) — contribuições bem-vindas
 ├── community/       → Recursos da comunidade brasileira — contribuições bem-vindas
 ├── README.md
