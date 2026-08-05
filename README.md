@@ -32,11 +32,12 @@ hermes-brasil/
 │   ├── profiles-e-kanban.md                → Multi-agente com profiles
 │   ├── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
 │   └── primeiro-agente.md                  → Criando seu primeiro agente (passo a passo)
-├── integrations/    → Integrações (WhatsApp, n8n, etc.) — contribuições bem-vindas
-├── community/       → Recursos da comunidade brasileira — contribuições bem-vindas
+├── CONTRIBUTING.md → Guia para contribuir
 ├── README.md
 └── LICENSE          → MIT
 ```
+
+`integrations/` e `community/` são áreas planejadas para contribuições futuras; ainda não fazem parte da árvore atual.
 
 ## 🚀 Como usar as skills
 
