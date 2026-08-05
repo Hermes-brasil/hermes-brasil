@@ -145,14 +145,14 @@ Restrinja toolsets quando a CLI/tool permitir. Menos tool = menos alucinação d
 
 Sintomas: “schedule is required” em loop, estouro de iterações, prompt longo rejeitado.
 
-Escapatória:
+Use apenas as interfaces suportadas:
 
 1. Crie o job **mínimo** (schedule + name)
-2. `update` campo a campo
-3. Preferir `script` para payloads longos
-4. Em último caso, editar `~/.hermes/cron/jobs.json` com backup prévio — a chave primária é `id` (às vezes aparece como `job_id` na listagem)
+2. Atualize campo a campo com `cronjob`, `hermes cron edit <job_id>` ou `/cron edit <job_id>`
+3. Prefira `script` para payloads longos
+4. Se ainda falhar, registre `hermes version`, comando e erro observado e abra uma issue
 
-Depois de qualquer edição manual:
+Não use a edição direta de `~/.hermes/cron/jobs.json` como recuperação genérica: ele é estado interno do scheduler. Só siga esse caminho quando a documentação oficial da sua versão o exigir. Depois da correção:
 
 ```bash
 hermes cron list
