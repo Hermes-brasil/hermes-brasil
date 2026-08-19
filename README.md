@@ -24,7 +24,8 @@ hermes-brasil/
 │   ├── hermes-philosophy-podcast/          → Filosofia do Hermes (podcast Nous Research)
 │   ├── orquestracao-kanban-humano-agente/  → Kanban humanos + agentes (com pitfalls)
 │   ├── prospeccao-b2b-comercio-local/      → Prospecção B2B de comércio local
-│   └── rag-assistente-conhecimento/        → Assistente RAG com conhecimento da empresa
+│   ├── rag-assistente-conhecimento/        → Assistente RAG com conhecimento da empresa
+│   └── think-tank-research/                → Pesquisa multi-persona com síntese por evidências
 ├── guides/          → Guias de instalação, configuração e uso (pt-BR)
 │   ├── instalacao-basica.md                → Atalho mínimo
 │   ├── instalacao-producao-vps.md          → VPS 24/7, gateway, update
