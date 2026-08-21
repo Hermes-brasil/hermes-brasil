@@ -30,6 +30,7 @@ hermes-brasil/
 │   ├── instalacao-producao-vps.md          → VPS 24/7, gateway, update
 │   ├── cron-em-producao.md                 → Jobs sérios (ledger, delivery, HOME)
 │   ├── profiles-e-kanban.md                → Multi-agente com profiles
+│   ├── testando-skills-localmente.md        → Validação antes do Pull Request
 │   ├── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
 │   └── primeiro-agente.md                  → Criando seu primeiro agente (passo a passo)
 ├── CONTRIBUTING.md → Guia para contribuir
@@ -66,6 +67,8 @@ Também funciona clonar o repo e copiar pastas de `skills/` para `~/.hermes/skil
 2. Crie uma branch para sua contribuição
 3. Adicione sua skill/guia/integração (veja [CONTRIBUTING.md](./CONTRIBUTING.md))
 4. Abra um **Pull Request**
+
+Antes do PR, siga o guia de [teste local de skills](./guides/testando-skills-localmente.md).
 
 ### Padrão de skill (SKILL.md)
 
