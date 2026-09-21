@@ -31,7 +31,8 @@ hermes-brasil/
 │   ├── cron-em-producao.md                 → Jobs sérios (ledger, delivery, HOME)
 │   ├── profiles-e-kanban.md                → Multi-agente com profiles
 │   ├── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
-│   └── primeiro-agente.md                  → Criando seu primeiro agente (passo a passo)
+│   ├── primeiro-agente.md                  → Criando seu primeiro agente (passo a passo)
+│   └── ojobinho-no-hermes.md               → Candidaturas locais com revisão humana
 ├── CONTRIBUTING.md → Guia para contribuir
 ├── README.md
 └── LICENSE          → MIT
@@ -59,6 +60,7 @@ Também funciona clonar o repo e copiar pastas de `skills/` para `~/.hermes/skil
 2. [Produção em VPS](./guides/instalacao-producao-vps.md)
 3. [Cron em produção](./guides/cron-em-producao.md)
 4. [Profiles + Kanban](./guides/profiles-e-kanban.md)
+5. [oJobinho no Hermes](./guides/ojobinho-no-hermes.md)
 
 ## 🚀 Como contribuir
 
