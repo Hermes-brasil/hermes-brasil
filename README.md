@@ -29,6 +29,7 @@ hermes-brasil/
 │   ├── instalacao-basica.md                → Atalho mínimo
 │   ├── instalacao-producao-vps.md          → VPS 24/7, gateway, update
 │   ├── cron-em-producao.md                 → Jobs sérios (ledger, delivery, HOME)
+│   ├── backup-e-recuperacao.md             → Backup verificável e restauração segura
 │   ├── profiles-e-kanban.md                → Multi-agente com profiles
 │   ├── testando-skills-localmente.md        → Validação antes do Pull Request
 │   ├── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
