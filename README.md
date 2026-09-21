@@ -25,14 +25,14 @@ hermes-brasil/
 │   ├── orquestracao-kanban-humano-agente/  → Kanban humanos + agentes (com pitfalls)
 │   ├── prospeccao-b2b-comercio-local/      → Prospecção B2B de comércio local
 │   ├── rag-assistente-conhecimento/        → Assistente RAG com conhecimento da empresa
-│   └── triagem-conteudo-externo/            → Defesa contra instruções em conteúdo não confiável
+│   └── triagem-conteudo-externo/           → Defesa contra instruções em conteúdo não confiável
 ├── guides/          → Guias de instalação, configuração e uso (pt-BR)
 │   ├── instalacao-basica.md                → Atalho mínimo
 │   ├── instalacao-producao-vps.md          → VPS 24/7, gateway, update
 │   ├── cron-em-producao.md                 → Jobs sérios (ledger, delivery, HOME)
 │   ├── backup-e-recuperacao.md             → Backup verificável e restauração segura
 │   ├── profiles-e-kanban.md                → Multi-agente com profiles
-│   ├── testando-skills-localmente.md        → Validação antes do Pull Request
+│   ├── testando-skills-localmente.md       → Validação antes do Pull Request
 │   ├── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
 │   ├── primeiro-agente.md                  → Criando seu primeiro agente (passo a passo)
 │   └── ojobinho-no-hermes.md               → Candidaturas locais com revisão humana
