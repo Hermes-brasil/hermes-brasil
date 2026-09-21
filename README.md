@@ -25,6 +25,7 @@ hermes-brasil/
 │   ├── orquestracao-kanban-humano-agente/  → Kanban humanos + agentes (com pitfalls)
 │   ├── prospeccao-b2b-comercio-local/      → Prospecção B2B de comércio local
 │   ├── rag-assistente-conhecimento/        → Assistente RAG com conhecimento da empresa
+│   ├── think-tank-research/                → Pesquisa multi-persona com síntese por evidências
 │   └── triagem-conteudo-externo/           → Defesa contra instruções em conteúdo não confiável
 ├── guides/          → Guias de instalação, configuração e uso (pt-BR)
 │   ├── instalacao-basica.md                → Atalho mínimo
