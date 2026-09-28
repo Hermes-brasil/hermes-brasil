@@ -33,6 +33,7 @@ hermes-brasil/
 │   ├── cron-em-producao.md                 → Jobs sérios (ledger, delivery, HOME)
 │   ├── backup-e-recuperacao.md             → Backup verificável e restauração segura
 │   ├── profiles-e-kanban.md                → Multi-agente com profiles
+│   ├── mcp-no-hermes.md                    → Servidores MCP: catálogo, instalação e pitfalls
 │   ├── testando-skills-localmente.md       → Validação antes do Pull Request
 │   ├── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
 │   ├── primeiro-agente.md                  → Criando seu primeiro agente (passo a passo)
@@ -64,7 +65,8 @@ Também funciona clonar o repo e copiar pastas de `skills/` para `~/.hermes/skil
 2. [Produção em VPS](./guides/instalacao-producao-vps.md)
 3. [Cron em produção](./guides/cron-em-producao.md)
 4. [Profiles + Kanban](./guides/profiles-e-kanban.md)
-5. [oJobinho no Hermes](./guides/ojobinho-no-hermes.md)
+5. [Servidores MCP](./guides/mcp-no-hermes.md)
+6. [oJobinho no Hermes](./guides/ojobinho-no-hermes.md)
 
 ## 🚀 Como contribuir
 
