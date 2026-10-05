@@ -1,0 +1,86 @@
+name: Validar skills
+
+on:
+  pull_request:
+    paths:
+      - 'skills/**'
+      - '.github/workflows/validar-skills.yml'
+  push:
+    paths:
+      - 'skills/**'
+      - '.github/workflows/validar-skills.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validar formato SKILL.md (agentskills.io)
+        shell: bash
+        run: |
+          echo "=== Validando skills (formato agentskills.io) ==="
+          errors=0
+          avisos=0
+
+          while IFS= read -r skill; do
+            [ -z "$skill" ] && continue
+            dir=$(dirname "$skill")
+            dirname=$(basename "$dir")
+            echo "▶ Verificando: $dirname"
+
+            # 1. Frontmatter delimitado por --- no inicio e no fim
+            if [ "$(head -1 "$skill")" != "---" ]; then
+              echo "  ❌ frontmatter ausente: a primeira linha precisa ser ---"
+              errors=$((errors + 1))
+            fi
+            if [ "$(grep -c '^---$' "$skill")" -lt 2 ]; then
+              echo "  ❌ frontmatter nao fechado: falta o --- final"
+              errors=$((errors + 1))
+            fi
+
+            # 2. Campo name presente e igual ao nome da pasta
+            nome=$(grep -m1 '^name:' "$skill" | cut -d: -f2- | tr -d '"' | xargs || true)
+            if [ -z "$nome" ]; then
+              echo "  ❌ campo 'name' ausente"
+              errors=$((errors + 1))
+            elif [ "$nome" != "$dirname" ]; then
+              echo "  ❌ 'name: $nome' difere do nome da pasta '$dirname'"
+              errors=$((errors + 1))
+            fi
+
+            # 3. Campo description presente e dentro do limite do padrao
+            desc=$(grep -m1 '^description:' "$skill" | cut -d: -f2- | tr -d '"' | xargs || true)
+            if [ -z "$desc" ]; then
+              echo "  ❌ campo 'description' ausente ou vazio"
+              errors=$((errors + 1))
+            else
+              desc_chars=$(printf '%s' "$desc" | wc -c | tr -d ' ')
+              if [ "$desc_chars" -gt 1024 ]; then
+                echo "  ❌ 'description' com $desc_chars chars — o limite do padrao e 1024"
+                errors=$((errors + 1))
+              elif [ "$desc_chars" -gt 200 ]; then
+                echo "  ⚠️ 'description' com $desc_chars chars — prefira descricoes curtas (gatilho na primeira frase)"
+                avisos=$((avisos + 1))
+              fi
+            fi
+          done < <(find skills -name 'SKILL.md' 2>/dev/null | sort)
+
+          echo
+          if [ "$errors" -gt 0 ]; then
+            echo "❌ $errors erro(s) encontrado(s) — corrija antes do merge."
+            exit 1
+          fi
+          echo "✅ Skills validas ($avisos aviso(s) nao bloqueante(s))."
+
+      - name: Varredura por padroes de segredo
+        shell: bash
+        run: |
+          echo "=== Varredura por padroes de segredo ==="
+          padroes='ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{12,}|xoxb-[A-Za-z0-9-]{10,}|AIza[0-9A-Za-z_-]{30,}|-----BEGIN [A-Z ]*PRIVATE KEY-----'
+          if grep -rInE --exclude-dir=.git --exclude-dir=.github "$padroes" .; then
+            echo "❌ Padrao de segredo encontrado acima — remova antes do merge."
+            exit 1
+          fi
+          echo "✅ Nenhum padrao de segredo encontrado."
