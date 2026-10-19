@@ -25,6 +25,7 @@ hermes-brasil/
 │   ├── orquestracao-kanban-humano-agente/  → Kanban humanos + agentes (com pitfalls)
 │   ├── prospeccao-b2b-comercio-local/      → Prospecção B2B de comércio local
 │   ├── rag-assistente-conhecimento/        → Assistente RAG com conhecimento da empresa
+│   ├── sabi-routing/                       → Roteamento de inferência por turno via Sabi (sabi-code)
 │   ├── think-tank-research/                → Pesquisa multi-persona com síntese por evidências
 │   └── triagem-conteudo-externo/           → Defesa contra instruções em conteúdo não confiável
 ├── guides/          → Guias de instalação, configuração e uso (pt-BR)
@@ -100,6 +101,7 @@ Junte-se aos canais oficiais da comunidade brasileira de Hermes Agent:
 - **Grupo WhatsApp**: [Entre no grupo](https://chat.whatsapp.com/DIDJlL9yQdlBY0fa4pABbe?s=cl&p=a&ilr=1)
 - **Telegram**: [t.me/hermesagentbr](https://t.me/hermesagentbr)
 - **Discord**: [Entre no Discord](https://discord.gg/nkZQeVjcJ)
+- **Discussions**: [Perguntas, setups e ideias](https://github.com/Hermes-brasil/hermes-brasil/discussions) — apresente seu setup e conte o que travou; é de lá que saem os próximos guias
 - **Hermes Bible**: [www.hermesbible.com](https://www.hermesbible.com/) — guia e recursos da comunidade
 - **Docs oficial**: [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com)
 

@@ -1,6 +1,6 @@
 ---
 name: sabi-routing
-description: Roteie cada inferência do Hermes pelo Sabi (alias sabi-code) — use quando quiser trocar cheap/mid/strong por round sem forkar o loop do Hermes.
+description: Use quando quiser rotear cada inferência do Hermes pelo Sabi (alias sabi-code) em vez de um modelo fixo. Troca cheap/mid/strong por round mantendo o loop nativo, sem forkar o Hermes.
 ---
 
 # Sabi Routing no Hermes
@@ -24,6 +24,7 @@ Não use para: transferir assinatura (Nous / OpenCode Go / ChatGPT Plus) para ou
 ## Pré-requisitos
 
 - Hermes `0.21.3` (commit `01382698`, `NousResearch/hermes-agent`). Verifique: `hermes --version`
+- Carga da skill verificada pelo mantenedor em `0.22.2` (`HERMES_HOME` isolado, `hermes skills list` → enabled). O roteamento em si segue testado só em `0.21.3`
 - Checkout Sabi com `npm install` feito
 - Perfil Hermes **novo e vazio** — nunca instale no `~/.hermes` pessoal
 - Modelo custom no Hermes exige contexto ≥ 64000 (ex.: Neste host `qwen2.5-coder:7b` tem 32768 e é rejeitado; use Nous ou local ≥64k)
@@ -84,7 +85,7 @@ Preserve o perfil. Não apague state do usuário nem mude outros providers.
 
 ## Limites explícitos (não omitir no PR)
 
-- Fixado/testado em Hermes `0.21.3` / `01382698`; outra versão = revalidar
+- Roteamento fixado/testado em Hermes `0.21.3` / `01382698`; em versão mais nova, o **carregamento** da skill já foi confirmado (0.22.2), o **roteamento** não
 - `discover_models: false` não suprime todos os GETs de metadata local (observado: 404s não quebram a tarefa)
 - Cobertura: conversa principal + resume com tool-loop limitado. Subagentes, compaction, MoA, gateway, desktop: não exercidos
 - Smoke pago / produção / economia medida: gates separados, não afirmados aqui
