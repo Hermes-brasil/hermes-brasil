@@ -29,7 +29,7 @@ hermes-brasil/
 │   ├── think-tank-research/                → Pesquisa multi-persona com síntese por evidências
 │   └── triagem-conteudo-externo/           → Defesa contra instruções em conteúdo não confiável
 ├── guides/          → Guias de instalação, configuração e uso (pt-BR)
-│   ├── instalacao-basica.md                → Atalho mínimo
+│   ├── instalacao-basica.md                → Instalar e sair falando com o agente (Linux/macOS/WSL)
 │   ├── instalacao-producao-vps.md          → VPS 24/7, gateway, update
 │   ├── cron-em-producao.md                 → Jobs sérios (ledger, delivery, HOME)
 │   ├── backup-e-recuperacao.md             → Backup verificável e restauração segura
