@@ -40,12 +40,15 @@ hermes-brasil/
 │   ├── chrome-windows-cdp-wsl.md           → Chrome do Windows no Hermes/WSL via CDP
 │   ├── primeiro-agente.md                  → Criando seu primeiro agente (passo a passo)
 │   └── ojobinho-no-hermes.md               → Candidaturas locais com revisão humana
+├── integrations/    → Integrações ponta a ponta (trigger → agente → entrega)
+│   ├── n8n-hermes.md                       → n8n dispara o Hermes e entrega no Telegram
+│   └── README.md                           → Índice e critérios das integrações
 ├── CONTRIBUTING.md → Guia para contribuir
 ├── README.md
 └── LICENSE          → MIT
 ```
 
-`integrations/` e `community/` são áreas planejadas para contribuições futuras; ainda não fazem parte da árvore atual.
+`community/` é área planejada para contribuições futuras; ainda não faz parte da árvore atual.
 
 ## 🚀 Como usar as skills
 
@@ -70,6 +73,7 @@ Também funciona clonar o repo e copiar pastas de `skills/` para `~/.hermes/skil
 5. [Servidores MCP](./guides/mcp-no-hermes.md)
 6. [Autorando skills que carregam](./guides/autoria-de-skills.md)
 7. [oJobinho no Hermes](./guides/ojobinho-no-hermes.md)
+8. [Integração n8n → Hermes → Telegram](./integrations/n8n-hermes.md)
 
 ## 🚀 Como contribuir
 
