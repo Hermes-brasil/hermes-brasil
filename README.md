@@ -42,6 +42,7 @@ hermes-brasil/
 │   └── ojobinho-no-hermes.md               → Candidaturas locais com revisão humana
 ├── integrations/    → Integrações ponta a ponta (trigger → agente → entrega)
 │   ├── n8n-hermes.md                       → n8n dispara o Hermes e entrega no Telegram
+│   ├── whatsapp-evolution.md               → WhatsApp (Evolution API) recebe e o agente responde
 │   └── README.md                           → Índice e critérios das integrações
 ├── CONTRIBUTING.md → Guia para contribuir
 ├── README.md
@@ -75,6 +76,15 @@ Também funciona clonar o repo e copiar pastas de `skills/` para `~/.hermes/skil
 7. [oJobinho no Hermes](./guides/ojobinho-no-hermes.md)
 8. [Integração n8n → Hermes → Telegram](./integrations/n8n-hermes.md)
 9. [Integração WhatsApp → Hermes → WhatsApp (Evolution API)](./integrations/whatsapp-evolution.md)
+
+## 🇧🇷 Ecossistema pt-BR (fora deste repo)
+
+O trabalho em português não está todo aqui. O que já existe, verificado:
+
+- **Pacotes de idioma pt-BR** (tradução da interface, TUI e Desktop) — três iniciativas independentes: [StudioCodeAI/hermes-lang-pt-br](https://github.com/StudioCodeAI/hermes-lang-pt-br), [henrickgu/hermes-lang-pt-br](https://github.com/henrickgu/hermes-lang-pt-br) e [jonascarv/hermes-lang-pt-br](https://github.com/jonascarv/hermes-lang-pt-br).
+- **Localização pt-BR nativa no Desktop** — PR aberto no repositório oficial: [NousResearch/hermes-agent#154185](https://github.com/NousResearch/hermes-agent/pull/154185) (bundle do catálogo completo, decisão de merge é dos mantenedores).
+
+Nenhum desses projetos é mantido por nós — estão listados porque quem chega em português precisa saber que existem. Se você mantém um projeto pt-BR e quer aparecer aqui, abra um PR só com esta lista.
 
 ## 🚀 Como contribuir
 
