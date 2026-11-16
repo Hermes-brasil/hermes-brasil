@@ -17,6 +17,7 @@ A regra de ouro: **o evento não fala com o agente; ele fala com uma rota**. A r
 ## Integrações disponíveis
 
 - [n8n → Hermes → Telegram](./n8n-hermes.md) — webhook do n8n dispara o agente e a resposta chega no Telegram. Inclui os dois caminhos (CLI one-shot e webhook assinado) e o pitfall de n8n em container.
+- [WhatsApp → Hermes → WhatsApp](./whatsapp-evolution.md) — Evolution API recebe a mensagem, o agente responde na mesma conversa. Inclui o risco de ban (e quando usar a API oficial), o filtro de payload e os falsos sucessos de envio.
 
 ## Qual caminho usar
 

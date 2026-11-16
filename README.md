@@ -74,6 +74,7 @@ Também funciona clonar o repo e copiar pastas de `skills/` para `~/.hermes/skil
 6. [Autorando skills que carregam](./guides/autoria-de-skills.md)
 7. [oJobinho no Hermes](./guides/ojobinho-no-hermes.md)
 8. [Integração n8n → Hermes → Telegram](./integrations/n8n-hermes.md)
+9. [Integração WhatsApp → Hermes → WhatsApp (Evolution API)](./integrations/whatsapp-evolution.md)
 
 ## 🚀 Como contribuir
 
