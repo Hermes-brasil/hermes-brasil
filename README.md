@@ -24,6 +24,7 @@ hermes-brasil/
 │   ├── hermes-philosophy-podcast/          → Filosofia do Hermes (podcast Nous Research)
 │   ├── orquestracao-kanban-humano-agente/  → Kanban humanos + agentes (com pitfalls)
 │   ├── prospeccao-b2b-comercio-local/      → Prospecção B2B de comércio local
+│   ├── publicar-site-deed-page/            → Publicar HTML/site estático no deed.page (prévia + "sim")
 │   ├── rag-assistente-conhecimento/        → Assistente RAG com conhecimento da empresa
 │   ├── sabi-routing/                       → Roteamento de inferência por turno via Sabi (sabi-code)
 │   ├── think-tank-research/                → Pesquisa multi-persona com síntese por evidências
